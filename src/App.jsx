@@ -29,10 +29,9 @@ function App() {
       })
   }, [])
 
-  console.log(politicians);
 
   return (
-    <div className="container mx-auto px-10">
+    <div className="container mx-auto px-10 lg:px-20">
       <h1 className='font-bold text-3xl text-center my-3'>Lista di politici</h1>
       <input
         type="text"

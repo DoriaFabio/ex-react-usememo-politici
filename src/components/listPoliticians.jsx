@@ -1,7 +1,7 @@
-import { useState } from "react";
+import React from "react";
 import CardPoliticians from "./CardPoliticians";
 
-export default function ListPoliticians({ list }) {
+function ListPoliticians({ list }) {
     return (
         <section>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 my-7">
@@ -14,3 +14,5 @@ export default function ListPoliticians({ list }) {
         </section>
     );
 }
+
+export default React.memo(ListPoliticians)

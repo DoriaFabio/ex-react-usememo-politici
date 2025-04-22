@@ -1,4 +1,6 @@
-export default function CardPoliticians({ politic }) {
+import React from "react";
+
+function CardPoliticians({ politic }) {
     return (
         <div className="card my-3">
             <img className="w-full h-90 object-cover" src={politic.image} alt={politic.name} />
@@ -10,3 +12,5 @@ export default function CardPoliticians({ politic }) {
         </div>
     );
 }
+
+export default React.memo(CardPoliticians)
