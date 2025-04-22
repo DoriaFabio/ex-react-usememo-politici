@@ -1,6 +1,6 @@
 export default function CardPoliticians({ politic }) {
     return (
-        <div className="card ">
+        <div className="card my-3">
             <img className="w-full h-90 object-cover" src={politic.image} alt={politic.name} />
             <div className="card-body">
                 <h5 className="card-title font-bold">{politic.name}</h5>
